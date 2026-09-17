@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>LIBRAS - Painel de Controle</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Arial, sans-serif; background: #14161a; color: #e8e8e8; margin: 0; padding: 24px; }
+  h1 { font-size: 20px; margin-bottom: 4px; }
+  .sub { color: #888; font-size: 13px; margin-bottom: 24px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .card { background: #1e2126; border: 1px solid #2c2f36; border-radius: 8px; padding: 16px; }
+  .card h2 { font-size: 14px; margin: 0 0 12px 0; color: #9fd3ff; text-transform: uppercase; letter-spacing: 0.5px; }
+  .row { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid #262931; font-size: 13px; }
+  .row:last-child { border-bottom: none; }
+  .badge { padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; }
+  .badge.ok { background: #1e4620; color: #7fd88f; }
+  .badge.off { background: #3a2020; color: #d88f8f; }
+  .badge.running { background: #2a3a5a; color: #9fc0ff; }
+  button { background: #2a5ad8; color: white; border: none; padding: 8px 14px; border-radius: 6px; cursor: pointer; font-size: 13px; margin: 4px 4px 4px 0; }
+  button:hover { background: #3a6ae8; }
+  button:disabled { background: #444; cursor: not-allowed; }
+  button.stop { background: #a83232; }
+  button.stop:hover { background: #c04040; }
+  .log { background: #0c0d0f; border-radius: 6px; padding: 10px; font-family: monospace; font-size: 11px; height: 160px; overflow-y: auto; white-space: pre-wrap; margin-top: 8px; color: #9fd88f; }
+  .actions { grid-column: 1 / -1; }
+</style>
+</head>
+<body>
+  <h1>LIBRAS &mdash; Painel de Controle</h1>
+  <div class="sub">Sem terminal: capture, treine e monitore por aqui. Atualiza a cada 2s.</div>
+
+  <div class="grid">
+    <div class="card actions">
+      <h2>Ações</h2>
+      <button onclick="startAction('capture_signatures')">Iniciar captura de assinaturas (webcam)</button>
+      <button onclick="startAction('photo_capture')">Iniciar captura de fotos (webcam)</button>
+      <button onclick="startAction('train')">Rodar treino agora</button>
+      <button id="daemon-start-btn" onclick="startAction('daemon', '/action/daemon/start')">Ligar daemon contínuo</button>
+      <button id="daemon-stop-btn" class="stop" onclick="stopDaemon()">Desligar daemon</button>
+      <button onclick="startAction('sync')">Sincronizar com o servidor</button>
+    </div>
+
+    <div class="card">
+      <h2>Processos</h2>
+      <div id="processes"></div>
+    </div>
+
+    <div class="card">
+      <h2>Dados capturados</h2>
+      <div id="data"></div>
+    </div>
+
+    <div class="card">
+      <h2>Rede estática (letras + comandos)</h2>
+      <div id="ckpt-static"></div>
+    </div>
+
+    <div class="card">
+      <h2>Rede de movimento</h2>
+      <div id="ckpt-movement"></div>
+    </div>
+
+    <div class="card actions">
+      <h2>Log ao vivo</h2>
+      <select id="log-select" onchange="refreshLog()">
+        <option value="train">train</option>
+        <option value="daemon">daemon</option>
+        <option value="capture_signatures">capture_signatures</option>
+        <option value="photo_capture">photo_capture</option>
+        <option value="sync">sync</option>
+      </select>
+      <div class="log" id="log-view"></div>
+    </div>
+  </div>
+
+<script>
+async function startAction(name, url) {
+  url = url || `/action/${name}`;
+  const res = await fetch(url, { method: "POST" });
+  const data = await res.json();
+  if (!data.ok) alert("Não foi possível iniciar: " + (data.error || "já está rodando"));
+  refreshStatus();
+}
+
+async function stopDaemon() {
+  const res = await fetch("/action/daemon/stop", { method: "POST" });
+  const data = await res.json();
+  if (!data.ok) alert("Não foi possível parar: " + (data.error || ""));
+  refreshStatus();
+}
+
+function badge(running) {
+  return running ? '<span class="badge running">rodando</span>' : '<span class="badge off">parado</span>';
+}
+
+function fmtPct(v) {
+  return v === null || v === undefined ? "-" : (v * 100).toFixed(1) + "%";
+}
+
+async function refreshStatus() {
+  const res = await fetch("/status");
+  const s = await res.json();
+
+  const procs = s.processes;
+  document.getElementById("processes").innerHTML = Object.entries(procs).map(
+    ([name, running]) => `<div class="row"><span>${name}</span>${badge(running)}</div>`
+  ).join("");
+
+  const d = s.data;
+  document.getElementById("data").innerHTML = `
+    <div class="row"><span>Letras capturadas</span><span>${d.letters.classes} classes / ${d.letters.samples} amostras</span></div>
+    <div class="row"><span>Comandos capturados</span><span>${d.commands.classes} classes / ${d.commands.samples} amostras</span></div>
+    <div class="row"><span>Movimento capturado</span><span>${d.movement.classes} classes / ${d.movement.samples} amostras</span></div>
+    <div class="row"><span>imgs/</span><span>${d.imgs.exists ? d.imgs.folders + ' pastas / ' + d.imgs.images + ' fotos' : 'não existe'}</span></div>
+  `;
+
+  for (const [key, elId] of [["static", "ckpt-static"], ["movement", "ckpt-movement"]]) {
+    const c = s.checkpoints[key];
+    document.getElementById(elId).innerHTML = c.trained ? `
+      <div class="row"><span>Status</span>${badge(false).replace('parado','treinado').replace('off','ok')}</div>
+      <div class="row"><span>Acurácia val.</span><span>${fmtPct(c.val_accuracy)}</span></div>
+      <div class="row"><span>Classes</span><span>${c.num_classes ?? '-'}</span></div>
+      <div class="row"><span>Amostras</span><span>${c.num_samples ?? '-'}</span></div>
+      <div class="row"><span>Treinado em</span><span>${c.trained_at ?? '-'}</span></div>
+    ` : `<div class="row"><span>Ainda não treinado</span>${badge(false)}</div>`;
+  }
+}
+
+async function refreshLog() {
+  const name = document.getElementById("log-select").value;
+  const res = await fetch(`/log/${name}`);
+  const data = await res.json();
+  const view = document.getElementById("log-view");
+  view.textContent = (data.lines || []).join("");
+  view.scrollTop = view.scrollHeight;
+}
+
+refreshStatus();
+refreshLog();
+setInterval(refreshStatus, 2000);
+setInterval(refreshLog, 2000);
+</script>
+</body>
+</html>

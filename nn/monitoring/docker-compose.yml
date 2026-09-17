@@ -1,0 +1,53 @@
+# Monitoramento - LIBRAS NN Platform
+# ---------------------------------------
+# Sobe Prometheus + Grafana localmente, sem depender de conta ou de
+# qualquer serviço na nuvem (o pedido original era "painel forte tipo
+# Grafana, 100% open-source e rodando local").
+#
+# Uso:
+#   cd monitoring
+#   docker compose up -d
+#   # Grafana em http://localhost:3000  (login padrão: admin / admin)
+#   # Prometheus em http://localhost:9090
+#
+# Pré-requisito: os processos train_daemon.py e o exporter de inferência
+# (metrics/exporter.py, usado dentro do translator.py) precisam estar
+# rodando no host ANTES ou DEPOIS de subir isso -- o Prometheus só
+# começa a coletar dados quando eles estiverem de pé nas portas
+# 9308/9309 (ver monitoring/prometheus.yml).
+
+services:
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: libras_prometheus
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus_data:/prometheus
+    ports:
+      - "9090:9090"
+    # Necessário no Linux pra "host.docker.internal" resolver pro host
+    # (no Docker Desktop/Mac/Windows isso já funciona por padrão).
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana-oss:latest
+    container_name: libras_grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./grafana/dashboards:/var/lib/grafana/dashboards:ro
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_AUTH_ANONYMOUS_ENABLED=false
+    depends_on:
+      - prometheus
+    restart: unless-stopped
+
+volumes:
+  prometheus_data:
+  grafana_data:

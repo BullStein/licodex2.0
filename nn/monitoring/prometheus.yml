@@ -1,0 +1,29 @@
+# Prometheus - LIBRAS NN Platform
+# -----------------------------------
+# Faz scrape de dois processos Python que rodam DIRETO no host (não em
+# container): o train_daemon.py (métricas de treino, porta 9308) e o
+# exporter de inferência usado pelo translator.py (métricas de
+# predição em produção, porta 9309).
+#
+# Como o Prometheus roda dentro de um container Docker, ele não enxerga
+# "localhost" do host automaticamente -- por isso os targets abaixo
+# usam "host.docker.internal", que o docker-compose.yml mapeia pra
+# funcionar tanto no Docker Desktop (Mac/Windows) quanto no Linux (via
+# extra_hosts: host.docker.internal:host-gateway).
+
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: "libras_train_daemon"
+    static_configs:
+      - targets: ["host.docker.internal:9308"]
+        labels:
+          component: "train_daemon"
+
+  - job_name: "libras_inference"
+    static_configs:
+      - targets: ["host.docker.internal:9309"]
+        labels:
+          component: "inference"

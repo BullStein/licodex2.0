@@ -1,0 +1,17 @@
+# Instale tudo de uma vez com: python -m pip install -r requirements.txt
+#
+# --- webcam / captura / classificação k-NN (scripts antigos) ---
+opencv-python
+mediapipe
+numpy
+
+# --- rede neural (nn/) ---
+torch
+watchdog
+prometheus_client
+
+# --- painel web de controle (panel/) ---
+flask
+
+# --- sincronização entre PCs (sync_client.py) ---
+requests
