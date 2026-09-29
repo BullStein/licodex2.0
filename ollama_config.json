@@ -1,0 +1,14 @@
+{
+  "fallback_profile": "casa",
+  "hostname_map": {},
+  "profiles": {
+    "casa": {
+      "model": "qwen3:8b",
+      "host": "http://localhost:11434"
+    },
+    "notebook": {
+      "model": "qwen3:4b",
+      "host": "http://localhost:11434"
+    }
+  }
+}

@@ -31,6 +31,12 @@ O QUE MUDOU em relação ao translator.py original:
       (requer nn/checkpoints/model_movement_latest.pt já treinado --
       se não existir, o script avisa e segue só com letra estática,
       sem travar).
+    - NOVO: painel de TREINO / REFORÇO desenhado no vídeo (auditoria do
+      Qwen, curva de treino, idade do checkpoint e a FORÇA da letra que
+      você está fazendo agora). Precisa de status_overlay.py e
+      libras_status.py na mesma pasta; se não existirem, o tradutor
+      avisa e segue sem o painel. Tecla "p" liga/desliga; --no-panel
+      desliga de vez.
     - Mesma UI, mesmos painéis, mesmo histórico -- só troca o "motor"
       de classificação por baixo.
 
@@ -48,10 +54,12 @@ Como usar:
     python translator_nn.py --nn-dir nn --enable-movement
     python translator_nn.py --nn-dir nn --enable-movement --motion-threshold 1.2 --record-seconds 1.0
     python translator_nn.py --nn-dir nn --metrics-port 9309   (ativa métricas Prometheus)
+    python translator_nn.py --nn-dir nn --no-panel            (sem o painel de treino/reforço)
 
 Controles:
     - "0" ou ESC para sair
     - "9" para limpar o histórico manualmente
+    - "p" para mostrar/esconder o painel de treino/reforço
 """
 
 import os
@@ -60,6 +68,13 @@ import math
 import time
 import argparse
 from collections import deque, Counter
+
+# torch ANTES de cv2/mediapipe: no Windows a ordem contrária costuma causar
+# "WinError 1114 ... c10.dll" (o predictor.py importa torch mais adiante).
+try:
+    import torch  # noqa: F401
+except Exception as _torch_err:
+    print(f"Aviso: torch não carregou ({_torch_err}). Veja o guia de correção do torch.")
 
 import cv2
 import numpy as np
@@ -177,6 +192,10 @@ def main():
                               "começou um gesto de movimento (padrão: 1.0 -- ajuste observando sua webcam).")
     parser.add_argument("--record-seconds", type=float, default=1.0,
                          help="Duração da janela gravada quando um gesto de movimento é detectado (padrão: 1.0s).")
+    parser.add_argument("--no-panel", action="store_true",
+                         help="Não desenha o painel de treino/reforço (a tecla p também liga/desliga).")
+    parser.add_argument("--status-file", default=None,
+                         help="Caminho do libras_status.json (padrão: o do libras_status.py).")
     args = parser.parse_args()
 
     sys.path.insert(0, os.path.join(args.nn_dir, "inference"))
@@ -248,6 +267,16 @@ def main():
 
     cv2.namedWindow(WINDOW_NAME, cv2.WINDOW_NORMAL)
     cv2.resizeWindow(WINDOW_NAME, WINDOW_WIDTH, WINDOW_HEIGHT)
+
+    # Painel de treino/reforço (opcional; nunca derruba o tradutor)
+    panel = None
+    if not args.no_panel:
+        try:
+            from status_overlay import StatusOverlay
+            panel = StatusOverlay(os.path.dirname(os.path.abspath(__file__)),
+                                  nn_dir=args.nn_dir, status_file=args.status_file)
+        except ImportError:
+            print("AVISO: status_overlay.py/libras_status.py não encontrados; painel desligado.")
 
     letter_buffer = deque(maxlen=8)
     command_buffer = deque(maxlen=6)
@@ -412,6 +441,10 @@ def main():
         cv2.putText(frame, history_text, (10, history_box_top + 48),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 255, 255), 2, cv2.LINE_AA)
 
+        # Painel de treino/reforço (auditoria, curva de treino, força da letra atual)
+        if panel is not None:
+            panel.draw(frame, letter, last_letter_confidence)
+
         cv2.imshow(WINDOW_NAME, frame)
 
         key = cv2.waitKey(5) & 0xFF
@@ -419,11 +452,15 @@ def main():
             break
         elif key == ord("9"):
             letter_history = ""
+        elif key == ord("p") and panel is not None:
+            panel.toggle()
 
         elapsed = time.time() - loop_start
         if elapsed < MIN_FRAME_INTERVAL:
             time.sleep(MIN_FRAME_INTERVAL - elapsed)
 
+    if panel is not None:
+        panel.close()
     cap.release()
     cv2.destroyAllWindows()
     landmarker.close()

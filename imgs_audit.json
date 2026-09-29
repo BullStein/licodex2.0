@@ -1,0 +1,3870 @@
+{
+  "modelo": "qwen3:8b",
+  "modo": "text",
+  "resumo": {
+    "ok": 123,
+    "revisar": 52
+  },
+  "sem_mao": [
+    "D\\D_0002.jpg",
+    "D\\D_0003.jpg",
+    "D\\D_0004.jpg",
+    "E\\E_0001.jpg",
+    "F\\F_0004.jpg",
+    "M\\M_0003.jpg",
+    "N\\N_0003.jpg",
+    "N\\N_0005.jpg"
+  ],
+  "fotos": [
+    {
+      "arquivo": "A\\A_0001.jpg",
+      "rotulo": "A",
+      "geo_top3": [
+        [
+          "A",
+          0.1021
+        ],
+        [
+          "E",
+          0.247
+        ],
+        [
+          "D",
+          0.2565
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "A\\A_0002.jpg",
+      "rotulo": "A",
+      "geo_top3": [
+        [
+          "A",
+          0.0973
+        ],
+        [
+          "E",
+          0.2456
+        ],
+        [
+          "D",
+          0.2532
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "A\\A_0003.jpg",
+      "rotulo": "A",
+      "geo_top3": [
+        [
+          "A",
+          0.1262
+        ],
+        [
+          "E",
+          0.2533
+        ],
+        [
+          "D",
+          0.2699
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "A\\A_0004.jpg",
+      "rotulo": "A",
+      "geo_top3": [
+        [
+          "A",
+          0.1719
+        ],
+        [
+          "E",
+          0.2659
+        ],
+        [
+          "D",
+          0.2788
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "A\\A_0005.jpg",
+      "rotulo": "A",
+      "geo_top3": [
+        [
+          "A",
+          0.1142
+        ],
+        [
+          "E",
+          0.248
+        ],
+        [
+          "D",
+          0.259
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "A\\A_0006.jpg",
+      "rotulo": "A",
+      "geo_top3": [
+        [
+          "S",
+          0.1284
+        ],
+        [
+          "A",
+          0.1557
+        ],
+        [
+          "I",
+          0.1762
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "A\\A_0007.jpg",
+      "rotulo": "A",
+      "geo_top3": [
+        [
+          "S",
+          0.1359
+        ],
+        [
+          "A",
+          0.1733
+        ],
+        [
+          "Y",
+          0.1811
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "A\\A_0008.jpg",
+      "rotulo": "A",
+      "geo_top3": [
+        [
+          "S",
+          0.1509
+        ],
+        [
+          "A",
+          0.1759
+        ],
+        [
+          "Y",
+          0.1975
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "A\\A_0009.jpg",
+      "rotulo": "A",
+      "geo_top3": [
+        [
+          "A",
+          0.1253
+        ],
+        [
+          "S",
+          0.1531
+        ],
+        [
+          "I",
+          0.2223
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "B\\B_0001.jpg",
+      "rotulo": "B",
+      "geo_top3": [
+        [
+          "T",
+          0.1403
+        ],
+        [
+          "B",
+          0.1548
+        ],
+        [
+          "F",
+          0.2217
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "B\\B_0002.jpg",
+      "rotulo": "B",
+      "geo_top3": [
+        [
+          "T",
+          0.1418
+        ],
+        [
+          "B",
+          0.1525
+        ],
+        [
+          "F",
+          0.239
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "B\\B_0003.jpg",
+      "rotulo": "B",
+      "geo_top3": [
+        [
+          "B",
+          0.1003
+        ],
+        [
+          "T",
+          0.1098
+        ],
+        [
+          "W",
+          0.2337
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "B\\B_0004.jpg",
+      "rotulo": "B",
+      "geo_top3": [
+        [
+          "B",
+          0.0776
+        ],
+        [
+          "T",
+          0.1111
+        ],
+        [
+          "W",
+          0.2063
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "B\\B_0005.jpg",
+      "rotulo": "B",
+      "geo_top3": [
+        [
+          "B",
+          0.0242
+        ],
+        [
+          "T",
+          0.1195
+        ],
+        [
+          "W",
+          0.1695
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "B\\B_0006.jpg",
+      "rotulo": "B",
+      "geo_top3": [
+        [
+          "W",
+          0.1213
+        ],
+        [
+          "B",
+          0.1585
+        ],
+        [
+          "T",
+          0.2364
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "B\\B_0007.jpg",
+      "rotulo": "B",
+      "geo_top3": [
+        [
+          "W",
+          0.118
+        ],
+        [
+          "B",
+          0.1672
+        ],
+        [
+          "T",
+          0.2418
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "B\\B_0008.jpg",
+      "rotulo": "B",
+      "geo_top3": [
+        [
+          "B",
+          0.0783
+        ],
+        [
+          "T",
+          0.1466
+        ],
+        [
+          "W",
+          0.1608
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "B\\B_0009.jpg",
+      "rotulo": "B",
+      "geo_top3": [
+        [
+          "B",
+          0.0818
+        ],
+        [
+          "T",
+          0.1476
+        ],
+        [
+          "W",
+          0.1626
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "C\\C_0001.jpg",
+      "rotulo": "C",
+      "geo_top3": [
+        [
+          "C",
+          0.2506
+        ],
+        [
+          "O",
+          0.33
+        ],
+        [
+          "F",
+          0.5448
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "C\\C_0002.jpg",
+      "rotulo": "C",
+      "geo_top3": [
+        [
+          "C",
+          0.1986
+        ],
+        [
+          "O",
+          0.3058
+        ],
+        [
+          "F",
+          0.5133
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "C\\C_0003.jpg",
+      "rotulo": "C",
+      "geo_top3": [
+        [
+          "C",
+          0.2939
+        ],
+        [
+          "O",
+          0.3824
+        ],
+        [
+          "F",
+          0.5994
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "C\\C_0004.jpg",
+      "rotulo": "C",
+      "geo_top3": [
+        [
+          "C",
+          0.2589
+        ],
+        [
+          "O",
+          0.3638
+        ],
+        [
+          "F",
+          0.5699
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "C\\C_0005.jpg",
+      "rotulo": "C",
+      "geo_top3": [
+        [
+          "C",
+          0.3503
+        ],
+        [
+          "O",
+          0.4251
+        ],
+        [
+          "F",
+          0.6421
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "C\\C_0006.jpg",
+      "rotulo": "C",
+      "geo_top3": [
+        [
+          "D",
+          0.1682
+        ],
+        [
+          "F",
+          0.1746
+        ],
+        [
+          "O",
+          0.2213
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "C\\C_0007.jpg",
+      "rotulo": "C",
+      "geo_top3": [
+        [
+          "D",
+          0.1653
+        ],
+        [
+          "F",
+          0.1714
+        ],
+        [
+          "O",
+          0.2268
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "C\\C_0008.jpg",
+      "rotulo": "C",
+      "geo_top3": [
+        [
+          "F",
+          0.1523
+        ],
+        [
+          "D",
+          0.2121
+        ],
+        [
+          "O",
+          0.2864
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "C\\C_0009.jpg",
+      "rotulo": "C",
+      "geo_top3": [
+        [
+          "F",
+          0.156
+        ],
+        [
+          "D",
+          0.2234
+        ],
+        [
+          "O",
+          0.276
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "D\\D_0001.jpg",
+      "rotulo": "D",
+      "geo_top3": [
+        [
+          "L",
+          0.1414
+        ],
+        [
+          "G",
+          0.233
+        ],
+        [
+          "E",
+          0.2685
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "D\\D_0005.jpg",
+      "rotulo": "D",
+      "geo_top3": [
+        [
+          "L",
+          0.2423
+        ],
+        [
+          "R",
+          0.3656
+        ],
+        [
+          "D",
+          0.3668
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "D\\D_0006.jpg",
+      "rotulo": "D",
+      "geo_top3": [
+        [
+          "D",
+          0.1618
+        ],
+        [
+          "F",
+          0.2003
+        ],
+        [
+          "O",
+          0.2574
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "D\\D_0007.jpg",
+      "rotulo": "D",
+      "geo_top3": [
+        [
+          "D",
+          0.1554
+        ],
+        [
+          "F",
+          0.1956
+        ],
+        [
+          "O",
+          0.2527
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "D\\D_0008.jpg",
+      "rotulo": "D",
+      "geo_top3": [
+        [
+          "D",
+          0.1984
+        ],
+        [
+          "F",
+          0.2079
+        ],
+        [
+          "E",
+          0.2563
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "D\\D_0009.jpg",
+      "rotulo": "D",
+      "geo_top3": [
+        [
+          "F",
+          0.1892
+        ],
+        [
+          "D",
+          0.1933
+        ],
+        [
+          "E",
+          0.2284
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "E\\E_0002.jpg",
+      "rotulo": "E",
+      "geo_top3": [
+        [
+          "E",
+          0.144
+        ],
+        [
+          "D",
+          0.2115
+        ],
+        [
+          "F",
+          0.2462
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "E\\E_0003.jpg",
+      "rotulo": "E",
+      "geo_top3": [
+        [
+          "E",
+          0.1758
+        ],
+        [
+          "D",
+          0.2009
+        ],
+        [
+          "F",
+          0.2372
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "E\\E_0004.jpg",
+      "rotulo": "E",
+      "geo_top3": [
+        [
+          "E",
+          0.1727
+        ],
+        [
+          "D",
+          0.2101
+        ],
+        [
+          "F",
+          0.258
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "E\\E_0005.jpg",
+      "rotulo": "E",
+      "geo_top3": [
+        [
+          "E",
+          0.1857
+        ],
+        [
+          "D",
+          0.2065
+        ],
+        [
+          "F",
+          0.2471
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "E\\E_0006.jpg",
+      "rotulo": "E",
+      "geo_top3": [
+        [
+          "S",
+          0.125
+        ],
+        [
+          "I",
+          0.141
+        ],
+        [
+          "E",
+          0.2214
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "E\\E_0007.jpg",
+      "rotulo": "E",
+      "geo_top3": [
+        [
+          "S",
+          0.1294
+        ],
+        [
+          "I",
+          0.1406
+        ],
+        [
+          "E",
+          0.2118
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "E\\E_0008.jpg",
+      "rotulo": "E",
+      "geo_top3": [
+        [
+          "E",
+          0.111
+        ],
+        [
+          "S",
+          0.205
+        ],
+        [
+          "I",
+          0.2274
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "E\\E_0009.jpg",
+      "rotulo": "E",
+      "geo_top3": [
+        [
+          "E",
+          0.1252
+        ],
+        [
+          "S",
+          0.1959
+        ],
+        [
+          "I",
+          0.225
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "F\\F_0001.jpg",
+      "rotulo": "F",
+      "geo_top3": [
+        [
+          "T",
+          0.2382
+        ],
+        [
+          "F",
+          0.2807
+        ],
+        [
+          "B",
+          0.3237
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "F\\F_0002.jpg",
+      "rotulo": "F",
+      "geo_top3": [
+        [
+          "T",
+          0.2129
+        ],
+        [
+          "F",
+          0.2847
+        ],
+        [
+          "B",
+          0.2994
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "F\\F_0003.jpg",
+      "rotulo": "F",
+      "geo_top3": [
+        [
+          "R",
+          0.3484
+        ],
+        [
+          "F",
+          0.3486
+        ],
+        [
+          "T",
+          0.3722
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "F\\F_0005.jpg",
+      "rotulo": "F",
+      "geo_top3": [
+        [
+          "T",
+          0.1104
+        ],
+        [
+          "B",
+          0.1452
+        ],
+        [
+          "R",
+          0.265
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "F\\F_0006.jpg",
+      "rotulo": "F",
+      "geo_top3": [
+        [
+          "O",
+          0.4417
+        ],
+        [
+          "C",
+          0.4832
+        ],
+        [
+          "P",
+          0.5275
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "F\\F_0007.jpg",
+      "rotulo": "F",
+      "geo_top3": [
+        [
+          "P",
+          0.4987
+        ],
+        [
+          "O",
+          0.5835
+        ],
+        [
+          "C",
+          0.5892
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "F\\F_0008.jpg",
+      "rotulo": "F",
+      "geo_top3": [
+        [
+          "T",
+          0.1678
+        ],
+        [
+          "B",
+          0.1916
+        ],
+        [
+          "W",
+          0.2591
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "F\\F_0009.jpg",
+      "rotulo": "F",
+      "geo_top3": [
+        [
+          "T",
+          0.1731
+        ],
+        [
+          "B",
+          0.1972
+        ],
+        [
+          "W",
+          0.2595
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "G\\G_0001.jpg",
+      "rotulo": "G",
+      "geo_top3": [
+        [
+          "S",
+          0.167
+        ],
+        [
+          "G",
+          0.1952
+        ],
+        [
+          "U",
+          0.229
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "G\\G_0002.jpg",
+      "rotulo": "G",
+      "geo_top3": [
+        [
+          "G",
+          0.2007
+        ],
+        [
+          "S",
+          0.202
+        ],
+        [
+          "U",
+          0.2603
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "G\\G_0003.jpg",
+      "rotulo": "G",
+      "geo_top3": [
+        [
+          "G",
+          0.3059
+        ],
+        [
+          "S",
+          0.4275
+        ],
+        [
+          "V",
+          0.4551
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "G\\G_0004.jpg",
+      "rotulo": "G",
+      "geo_top3": [
+        [
+          "G",
+          0.2771
+        ],
+        [
+          "S",
+          0.4026
+        ],
+        [
+          "U",
+          0.4361
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "G\\G_0005.jpg",
+      "rotulo": "G",
+      "geo_top3": [
+        [
+          "G",
+          0.1526
+        ],
+        [
+          "L",
+          0.165
+        ],
+        [
+          "U",
+          0.1818
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "G\\G_0006.jpg",
+      "rotulo": "G",
+      "geo_top3": [
+        [
+          "G",
+          0.1488
+        ],
+        [
+          "L",
+          0.1593
+        ],
+        [
+          "U",
+          0.1762
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "I\\I_0001.jpg",
+      "rotulo": "I",
+      "geo_top3": [
+        [
+          "I",
+          0.1038
+        ],
+        [
+          "Y",
+          0.1739
+        ],
+        [
+          "S",
+          0.1833
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "I\\I_0002.jpg",
+      "rotulo": "I",
+      "geo_top3": [
+        [
+          "I",
+          0.0967
+        ],
+        [
+          "S",
+          0.1495
+        ],
+        [
+          "Y",
+          0.1729
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "I\\I_0003.jpg",
+      "rotulo": "I",
+      "geo_top3": [
+        [
+          "I",
+          0.2517
+        ],
+        [
+          "S",
+          0.2581
+        ],
+        [
+          "G",
+          0.3386
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "I\\I_0004.jpg",
+      "rotulo": "I",
+      "geo_top3": [
+        [
+          "I",
+          0.2251
+        ],
+        [
+          "S",
+          0.2454
+        ],
+        [
+          "G",
+          0.3387
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "I\\I_0005.jpg",
+      "rotulo": "I",
+      "geo_top3": [
+        [
+          "I",
+          0.1037
+        ],
+        [
+          "Y",
+          0.1469
+        ],
+        [
+          "S",
+          0.1726
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "I\\I_0006.jpg",
+      "rotulo": "I",
+      "geo_top3": [
+        [
+          "I",
+          0.1118
+        ],
+        [
+          "Y",
+          0.1433
+        ],
+        [
+          "S",
+          0.1801
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "I\\I_0007.jpg",
+      "rotulo": "I",
+      "geo_top3": [
+        [
+          "I",
+          0.1103
+        ],
+        [
+          "S",
+          0.1574
+        ],
+        [
+          "Y",
+          0.1833
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "I\\I_0008.jpg",
+      "rotulo": "I",
+      "geo_top3": [
+        [
+          "I",
+          0.1179
+        ],
+        [
+          "S",
+          0.1674
+        ],
+        [
+          "Y",
+          0.1957
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "L\\L_0001.jpg",
+      "rotulo": "L",
+      "geo_top3": [
+        [
+          "L",
+          0.1235
+        ],
+        [
+          "A",
+          0.2984
+        ],
+        [
+          "R",
+          0.3027
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "L\\L_0002.jpg",
+      "rotulo": "L",
+      "geo_top3": [
+        [
+          "L",
+          0.1495
+        ],
+        [
+          "D",
+          0.2927
+        ],
+        [
+          "A",
+          0.2941
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "L\\L_0003.jpg",
+      "rotulo": "L",
+      "geo_top3": [
+        [
+          "L",
+          0.139
+        ],
+        [
+          "R",
+          0.3082
+        ],
+        [
+          "A",
+          0.31
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "L\\L_0004.jpg",
+      "rotulo": "L",
+      "geo_top3": [
+        [
+          "L",
+          0.2038
+        ],
+        [
+          "A",
+          0.3155
+        ],
+        [
+          "D",
+          0.3161
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "L\\L_0005.jpg",
+      "rotulo": "L",
+      "geo_top3": [
+        [
+          "L",
+          0.1832
+        ],
+        [
+          "A",
+          0.2822
+        ],
+        [
+          "D",
+          0.2852
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "L\\L_0006.jpg",
+      "rotulo": "L",
+      "geo_top3": [
+        [
+          "G",
+          0.2501
+        ],
+        [
+          "L",
+          0.3279
+        ],
+        [
+          "V",
+          0.3315
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "L\\L_0007.jpg",
+      "rotulo": "L",
+      "geo_top3": [
+        [
+          "G",
+          0.2564
+        ],
+        [
+          "L",
+          0.3338
+        ],
+        [
+          "V",
+          0.345
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "L\\L_0008.jpg",
+      "rotulo": "L",
+      "geo_top3": [
+        [
+          "L",
+          0.086
+        ],
+        [
+          "G",
+          0.1989
+        ],
+        [
+          "A",
+          0.2502
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "L\\L_0009.jpg",
+      "rotulo": "L",
+      "geo_top3": [
+        [
+          "L",
+          0.0886
+        ],
+        [
+          "G",
+          0.2045
+        ],
+        [
+          "A",
+          0.2355
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "M\\M_0001.jpg",
+      "rotulo": "M",
+      "geo_top3": [
+        [
+          "M",
+          0.3495
+        ],
+        [
+          "N",
+          0.4852
+        ],
+        [
+          "Q",
+          0.6386
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "M\\M_0002.jpg",
+      "rotulo": "M",
+      "geo_top3": [
+        [
+          "M",
+          0.1359
+        ],
+        [
+          "N",
+          0.2947
+        ],
+        [
+          "Q",
+          0.5595
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "M\\M_0004.jpg",
+      "rotulo": "M",
+      "geo_top3": [
+        [
+          "M",
+          0.1319
+        ],
+        [
+          "N",
+          0.2678
+        ],
+        [
+          "Q",
+          0.6044
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "M\\M_0005.jpg",
+      "rotulo": "M",
+      "geo_top3": [
+        [
+          "M",
+          0.3732
+        ],
+        [
+          "N",
+          0.454
+        ],
+        [
+          "Q",
+          0.7026
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "M\\M_0006.jpg",
+      "rotulo": "M",
+      "geo_top3": [
+        [
+          "M",
+          0.172
+        ],
+        [
+          "N",
+          0.2611
+        ],
+        [
+          "Q",
+          0.4972
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "M\\M_0007.jpg",
+      "rotulo": "M",
+      "geo_top3": [
+        [
+          "M",
+          0.1874
+        ],
+        [
+          "N",
+          0.2836
+        ],
+        [
+          "Q",
+          0.5127
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "M\\M_0008.jpg",
+      "rotulo": "M",
+      "geo_top3": [
+        [
+          "N",
+          0.3468
+        ],
+        [
+          "M",
+          0.4584
+        ],
+        [
+          "Q",
+          0.5895
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "M\\M_0009.jpg",
+      "rotulo": "M",
+      "geo_top3": [
+        [
+          "N",
+          0.3515
+        ],
+        [
+          "M",
+          0.4572
+        ],
+        [
+          "Q",
+          0.5877
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "N\\N_0001.jpg",
+      "rotulo": "N",
+      "geo_top3": [
+        [
+          "M",
+          0.2823
+        ],
+        [
+          "N",
+          0.3594
+        ],
+        [
+          "Q",
+          0.6059
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "N\\N_0002.jpg",
+      "rotulo": "N",
+      "geo_top3": [
+        [
+          "M",
+          0.243
+        ],
+        [
+          "N",
+          0.3662
+        ],
+        [
+          "Q",
+          0.5938
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "N\\N_0004.jpg",
+      "rotulo": "N",
+      "geo_top3": [
+        [
+          "M",
+          0.203
+        ],
+        [
+          "N",
+          0.2414
+        ],
+        [
+          "Q",
+          0.5831
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "N\\N_0006.jpg",
+      "rotulo": "N",
+      "geo_top3": [
+        [
+          "N",
+          0.1942
+        ],
+        [
+          "M",
+          0.2247
+        ],
+        [
+          "Q",
+          0.4509
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "N\\N_0007.jpg",
+      "rotulo": "N",
+      "geo_top3": [
+        [
+          "N",
+          0.2194
+        ],
+        [
+          "M",
+          0.2431
+        ],
+        [
+          "Q",
+          0.4501
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "N\\N_0008.jpg",
+      "rotulo": "N",
+      "geo_top3": [
+        [
+          "N",
+          0.5769
+        ],
+        [
+          "Q",
+          0.6347
+        ],
+        [
+          "M",
+          0.6611
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "N\\N_0009.jpg",
+      "rotulo": "N",
+      "geo_top3": [
+        [
+          "N",
+          0.5572
+        ],
+        [
+          "Q",
+          0.6287
+        ],
+        [
+          "M",
+          0.6456
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "O\\O_0001.jpg",
+      "rotulo": "O",
+      "geo_top3": [
+        [
+          "O",
+          0.1952
+        ],
+        [
+          "C",
+          0.2235
+        ],
+        [
+          "D",
+          0.4108
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "O\\O_0002.jpg",
+      "rotulo": "O",
+      "geo_top3": [
+        [
+          "O",
+          0.2128
+        ],
+        [
+          "C",
+          0.2191
+        ],
+        [
+          "D",
+          0.4403
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "O\\O_0003.jpg",
+      "rotulo": "O",
+      "geo_top3": [
+        [
+          "C",
+          0.1997
+        ],
+        [
+          "O",
+          0.2036
+        ],
+        [
+          "F",
+          0.4544
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "O\\O_0004.jpg",
+      "rotulo": "O",
+      "geo_top3": [
+        [
+          "C",
+          0.2732
+        ],
+        [
+          "O",
+          0.3063
+        ],
+        [
+          "F",
+          0.5415
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "O\\O_0005.jpg",
+      "rotulo": "O",
+      "geo_top3": [
+        [
+          "C",
+          0.3003
+        ],
+        [
+          "O",
+          0.3386
+        ],
+        [
+          "F",
+          0.5611
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "O\\O_0006.jpg",
+      "rotulo": "O",
+      "geo_top3": [
+        [
+          "D",
+          0.247
+        ],
+        [
+          "E",
+          0.2485
+        ],
+        [
+          "F",
+          0.2667
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "O\\O_0007.jpg",
+      "rotulo": "O",
+      "geo_top3": [
+        [
+          "D",
+          0.2199
+        ],
+        [
+          "E",
+          0.2344
+        ],
+        [
+          "F",
+          0.2427
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "O\\O_0008.jpg",
+      "rotulo": "O",
+      "geo_top3": [
+        [
+          "O",
+          0.13
+        ],
+        [
+          "F",
+          0.2085
+        ],
+        [
+          "D",
+          0.2085
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "O\\O_0009.jpg",
+      "rotulo": "O",
+      "geo_top3": [
+        [
+          "O",
+          0.139
+        ],
+        [
+          "D",
+          0.1992
+        ],
+        [
+          "F",
+          0.2069
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "P\\P_0001.jpg",
+      "rotulo": "P",
+      "geo_top3": [
+        [
+          "P",
+          0.4359
+        ],
+        [
+          "L",
+          0.6046
+        ],
+        [
+          "O",
+          0.6154
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "P\\P_0002.jpg",
+      "rotulo": "P",
+      "geo_top3": [
+        [
+          "P",
+          0.4827
+        ],
+        [
+          "O",
+          0.7882
+        ],
+        [
+          "L",
+          0.8202
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "P\\P_0003.jpg",
+      "rotulo": "P",
+      "geo_top3": [
+        [
+          "P",
+          1.3527
+        ],
+        [
+          "G",
+          1.3608
+        ],
+        [
+          "S",
+          1.4018
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "P\\P_0004.jpg",
+      "rotulo": "P",
+      "geo_top3": [
+        [
+          "G",
+          1.3289
+        ],
+        [
+          "P",
+          1.3314
+        ],
+        [
+          "S",
+          1.3615
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "P\\P_0005.jpg",
+      "rotulo": "P",
+      "geo_top3": [
+        [
+          "P",
+          0.7458
+        ],
+        [
+          "L",
+          1.0868
+        ],
+        [
+          "O",
+          1.0875
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "P\\P_0006.jpg",
+      "rotulo": "P",
+      "geo_top3": [
+        [
+          "P",
+          0.7649
+        ],
+        [
+          "L",
+          1.1293
+        ],
+        [
+          "O",
+          1.1307
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "P\\P_0007.jpg",
+      "rotulo": "P",
+      "geo_top3": [
+        [
+          "P",
+          0.5011
+        ],
+        [
+          "O",
+          1.0278
+        ],
+        [
+          "L",
+          1.0366
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "P\\P_0008.jpg",
+      "rotulo": "P",
+      "geo_top3": [
+        [
+          "P",
+          0.4874
+        ],
+        [
+          "O",
+          1.0056
+        ],
+        [
+          "L",
+          1.0173
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "Q\\Q_0001.jpg",
+      "rotulo": "Q",
+      "geo_top3": [
+        [
+          "Q",
+          0.6884
+        ],
+        [
+          "N",
+          0.8519
+        ],
+        [
+          "M",
+          0.8916
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "Q\\Q_0002.jpg",
+      "rotulo": "Q",
+      "geo_top3": [
+        [
+          "Q",
+          0.2026
+        ],
+        [
+          "N",
+          0.6122
+        ],
+        [
+          "M",
+          0.6354
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "Q\\Q_0003.jpg",
+      "rotulo": "Q",
+      "geo_top3": [
+        [
+          "Q",
+          0.2883
+        ],
+        [
+          "M",
+          0.545
+        ],
+        [
+          "N",
+          0.5605
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "Q\\Q_0004.jpg",
+      "rotulo": "Q",
+      "geo_top3": [
+        [
+          "Q",
+          0.2441
+        ],
+        [
+          "M",
+          0.5235
+        ],
+        [
+          "N",
+          0.5316
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "Q\\Q_0005.jpg",
+      "rotulo": "Q",
+      "geo_top3": [
+        [
+          "Q",
+          0.252
+        ],
+        [
+          "N",
+          0.5356
+        ],
+        [
+          "M",
+          0.6121
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "Q\\Q_0006.jpg",
+      "rotulo": "Q",
+      "geo_top3": [
+        [
+          "Q",
+          0.3522
+        ],
+        [
+          "N",
+          0.7407
+        ],
+        [
+          "M",
+          0.801
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "Q\\Q_0007.jpg",
+      "rotulo": "Q",
+      "geo_top3": [
+        [
+          "M",
+          0.525
+        ],
+        [
+          "N",
+          0.6348
+        ],
+        [
+          "Q",
+          0.6361
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "Q\\Q_0008.jpg",
+      "rotulo": "Q",
+      "geo_top3": [
+        [
+          "N",
+          0.5464
+        ],
+        [
+          "Q",
+          0.6202
+        ],
+        [
+          "M",
+          0.6962
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "Q\\Q_0009.jpg",
+      "rotulo": "Q",
+      "geo_top3": [
+        [
+          "N",
+          0.5593
+        ],
+        [
+          "Q",
+          0.6349
+        ],
+        [
+          "M",
+          0.7095
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "R\\R_0001.jpg",
+      "rotulo": "R",
+      "geo_top3": [
+        [
+          "R",
+          0.1199
+        ],
+        [
+          "F",
+          0.231
+        ],
+        [
+          "D",
+          0.2465
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "R\\R_0002.jpg",
+      "rotulo": "R",
+      "geo_top3": [
+        [
+          "R",
+          0.1231
+        ],
+        [
+          "F",
+          0.2318
+        ],
+        [
+          "D",
+          0.251
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "R\\R_0003.jpg",
+      "rotulo": "R",
+      "geo_top3": [
+        [
+          "R",
+          0.143
+        ],
+        [
+          "F",
+          0.223
+        ],
+        [
+          "D",
+          0.2682
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "R\\R_0004.jpg",
+      "rotulo": "R",
+      "geo_top3": [
+        [
+          "R",
+          0.1393
+        ],
+        [
+          "F",
+          0.2259
+        ],
+        [
+          "D",
+          0.2877
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "R\\R_0005.jpg",
+      "rotulo": "R",
+      "geo_top3": [
+        [
+          "R",
+          0.1572
+        ],
+        [
+          "F",
+          0.2009
+        ],
+        [
+          "D",
+          0.2699
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "R\\R_0006.jpg",
+      "rotulo": "R",
+      "geo_top3": [
+        [
+          "U",
+          0.1175
+        ],
+        [
+          "V",
+          0.1248
+        ],
+        [
+          "R",
+          0.1629
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "R\\R_0007.jpg",
+      "rotulo": "R",
+      "geo_top3": [
+        [
+          "U",
+          0.1055
+        ],
+        [
+          "V",
+          0.1209
+        ],
+        [
+          "R",
+          0.1641
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "R\\R_0008.jpg",
+      "rotulo": "R",
+      "geo_top3": [
+        [
+          "U",
+          0.106
+        ],
+        [
+          "V",
+          0.1398
+        ],
+        [
+          "R",
+          0.1724
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "R\\R_0009.jpg",
+      "rotulo": "R",
+      "geo_top3": [
+        [
+          "U",
+          0.1047
+        ],
+        [
+          "V",
+          0.1361
+        ],
+        [
+          "R",
+          0.174
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "S\\S_0001.jpg",
+      "rotulo": "S",
+      "geo_top3": [
+        [
+          "S",
+          0.1234
+        ],
+        [
+          "A",
+          0.1448
+        ],
+        [
+          "I",
+          0.1552
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "S\\S_0002.jpg",
+      "rotulo": "S",
+      "geo_top3": [
+        [
+          "S",
+          0.1163
+        ],
+        [
+          "I",
+          0.1647
+        ],
+        [
+          "A",
+          0.2226
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "S\\S_0003.jpg",
+      "rotulo": "S",
+      "geo_top3": [
+        [
+          "S",
+          0.2409
+        ],
+        [
+          "I",
+          0.29
+        ],
+        [
+          "G",
+          0.3139
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "S\\S_0004.jpg",
+      "rotulo": "S",
+      "geo_top3": [
+        [
+          "S",
+          0.2521
+        ],
+        [
+          "I",
+          0.2993
+        ],
+        [
+          "G",
+          0.3235
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "S\\S_0005.jpg",
+      "rotulo": "S",
+      "geo_top3": [
+        [
+          "S",
+          0.0994
+        ],
+        [
+          "I",
+          0.1291
+        ],
+        [
+          "A",
+          0.1804
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "S\\S_0006.jpg",
+      "rotulo": "S",
+      "geo_top3": [
+        [
+          "S",
+          0.1057
+        ],
+        [
+          "I",
+          0.132
+        ],
+        [
+          "A",
+          0.1914
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "S\\S_0007.jpg",
+      "rotulo": "S",
+      "geo_top3": [
+        [
+          "S",
+          0.1389
+        ],
+        [
+          "A",
+          0.1403
+        ],
+        [
+          "I",
+          0.2049
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "S\\S_0008.jpg",
+      "rotulo": "S",
+      "geo_top3": [
+        [
+          "A",
+          0.139
+        ],
+        [
+          "S",
+          0.1491
+        ],
+        [
+          "I",
+          0.2104
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "T\\T_0001.jpg",
+      "rotulo": "T",
+      "geo_top3": [
+        [
+          "T",
+          0.1199
+        ],
+        [
+          "B",
+          0.1844
+        ],
+        [
+          "F",
+          0.2616
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "T\\T_0002.jpg",
+      "rotulo": "T",
+      "geo_top3": [
+        [
+          "T",
+          0.1317
+        ],
+        [
+          "B",
+          0.191
+        ],
+        [
+          "F",
+          0.2403
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "T\\T_0003.jpg",
+      "rotulo": "T",
+      "geo_top3": [
+        [
+          "T",
+          0.1443
+        ],
+        [
+          "B",
+          0.2021
+        ],
+        [
+          "F",
+          0.2443
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "T\\T_0004.jpg",
+      "rotulo": "T",
+      "geo_top3": [
+        [
+          "T",
+          0.0962
+        ],
+        [
+          "B",
+          0.1689
+        ],
+        [
+          "F",
+          0.223
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "T\\T_0005.jpg",
+      "rotulo": "T",
+      "geo_top3": [
+        [
+          "T",
+          0.1029
+        ],
+        [
+          "B",
+          0.1796
+        ],
+        [
+          "F",
+          0.2316
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "T\\T_0006.jpg",
+      "rotulo": "T",
+      "geo_top3": [
+        [
+          "B",
+          0.1212
+        ],
+        [
+          "T",
+          0.1467
+        ],
+        [
+          "W",
+          0.2185
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "T\\T_0007.jpg",
+      "rotulo": "T",
+      "geo_top3": [
+        [
+          "B",
+          0.1215
+        ],
+        [
+          "T",
+          0.1524
+        ],
+        [
+          "W",
+          0.2036
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "T\\T_0008.jpg",
+      "rotulo": "T",
+      "geo_top3": [
+        [
+          "T",
+          0.1313
+        ],
+        [
+          "B",
+          0.1445
+        ],
+        [
+          "W",
+          0.2224
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "T\\T_0009.jpg",
+      "rotulo": "T",
+      "geo_top3": [
+        [
+          "T",
+          0.137
+        ],
+        [
+          "B",
+          0.1495
+        ],
+        [
+          "W",
+          0.2237
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "U\\U_0001.jpg",
+      "rotulo": "U",
+      "geo_top3": [
+        [
+          "U",
+          0.0641
+        ],
+        [
+          "V",
+          0.1035
+        ],
+        [
+          "R",
+          0.2126
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "U\\U_0002.jpg",
+      "rotulo": "U",
+      "geo_top3": [
+        [
+          "U",
+          0.0677
+        ],
+        [
+          "V",
+          0.119
+        ],
+        [
+          "R",
+          0.1879
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "U\\U_0003.jpg",
+      "rotulo": "U",
+      "geo_top3": [
+        [
+          "U",
+          0.0463
+        ],
+        [
+          "V",
+          0.103
+        ],
+        [
+          "R",
+          0.1594
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "U\\U_0004.jpg",
+      "rotulo": "U",
+      "geo_top3": [
+        [
+          "U",
+          0.0766
+        ],
+        [
+          "V",
+          0.1253
+        ],
+        [
+          "R",
+          0.1342
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "U\\U_0005.jpg",
+      "rotulo": "U",
+      "geo_top3": [
+        [
+          "U",
+          0.0625
+        ],
+        [
+          "V",
+          0.1189
+        ],
+        [
+          "R",
+          0.1527
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "U\\U_0006.jpg",
+      "rotulo": "U",
+      "geo_top3": [
+        [
+          "V",
+          0.1171
+        ],
+        [
+          "U",
+          0.1461
+        ],
+        [
+          "W",
+          0.214
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "U\\U_0007.jpg",
+      "rotulo": "U",
+      "geo_top3": [
+        [
+          "V",
+          0.1172
+        ],
+        [
+          "U",
+          0.1451
+        ],
+        [
+          "W",
+          0.2086
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "U\\U_0008.jpg",
+      "rotulo": "U",
+      "geo_top3": [
+        [
+          "U",
+          0.0616
+        ],
+        [
+          "V",
+          0.1261
+        ],
+        [
+          "R",
+          0.2055
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "U\\U_0009.jpg",
+      "rotulo": "U",
+      "geo_top3": [
+        [
+          "U",
+          0.0903
+        ],
+        [
+          "V",
+          0.131
+        ],
+        [
+          "R",
+          0.252
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "V\\V_0001.jpg",
+      "rotulo": "V",
+      "geo_top3": [
+        [
+          "V",
+          0.0608
+        ],
+        [
+          "U",
+          0.0922
+        ],
+        [
+          "R",
+          0.212
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "V\\V_0002.jpg",
+      "rotulo": "V",
+      "geo_top3": [
+        [
+          "V",
+          0.0534
+        ],
+        [
+          "U",
+          0.0852
+        ],
+        [
+          "R",
+          0.209
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "V\\V_0003.jpg",
+      "rotulo": "V",
+      "geo_top3": [
+        [
+          "V",
+          0.0384
+        ],
+        [
+          "U",
+          0.0883
+        ],
+        [
+          "W",
+          0.1994
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "V\\V_0004.jpg",
+      "rotulo": "V",
+      "geo_top3": [
+        [
+          "V",
+          0.0332
+        ],
+        [
+          "U",
+          0.0964
+        ],
+        [
+          "W",
+          0.1884
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "V\\V_0005.jpg",
+      "rotulo": "V",
+      "geo_top3": [
+        [
+          "V",
+          0.0669
+        ],
+        [
+          "U",
+          0.1295
+        ],
+        [
+          "W",
+          0.1925
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "V\\V_0006.jpg",
+      "rotulo": "V",
+      "geo_top3": [
+        [
+          "V",
+          0.1471
+        ],
+        [
+          "U",
+          0.1762
+        ],
+        [
+          "G",
+          0.2457
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "V\\V_0007.jpg",
+      "rotulo": "V",
+      "geo_top3": [
+        [
+          "V",
+          0.1448
+        ],
+        [
+          "U",
+          0.1709
+        ],
+        [
+          "G",
+          0.2423
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "V\\V_0008.jpg",
+      "rotulo": "V",
+      "geo_top3": [
+        [
+          "U",
+          0.081
+        ],
+        [
+          "V",
+          0.1051
+        ],
+        [
+          "R",
+          0.1684
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "V\\V_0009.jpg",
+      "rotulo": "V",
+      "geo_top3": [
+        [
+          "U",
+          0.0829
+        ],
+        [
+          "V",
+          0.1069
+        ],
+        [
+          "R",
+          0.1574
+        ]
+      ],
+      "rede": null,
+      "suspeita": true,
+      "qwen": null,
+      "final": "revisar"
+    },
+    {
+      "arquivo": "W\\W_0001.jpg",
+      "rotulo": "W",
+      "geo_top3": [
+        [
+          "W",
+          0.084
+        ],
+        [
+          "B",
+          0.2242
+        ],
+        [
+          "V",
+          0.2243
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "W\\W_0002.jpg",
+      "rotulo": "W",
+      "geo_top3": [
+        [
+          "W",
+          0.055
+        ],
+        [
+          "B",
+          0.1472
+        ],
+        [
+          "V",
+          0.2191
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "W\\W_0003.jpg",
+      "rotulo": "W",
+      "geo_top3": [
+        [
+          "W",
+          0.049
+        ],
+        [
+          "B",
+          0.1403
+        ],
+        [
+          "V",
+          0.2076
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "W\\W_0004.jpg",
+      "rotulo": "W",
+      "geo_top3": [
+        [
+          "W",
+          0.052
+        ],
+        [
+          "B",
+          0.1295
+        ],
+        [
+          "V",
+          0.2092
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "W\\W_0005.jpg",
+      "rotulo": "W",
+      "geo_top3": [
+        [
+          "W",
+          0.055
+        ],
+        [
+          "B",
+          0.1326
+        ],
+        [
+          "V",
+          0.2141
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "W\\W_0006.jpg",
+      "rotulo": "W",
+      "geo_top3": [
+        [
+          "W",
+          0.124
+        ],
+        [
+          "V",
+          0.2125
+        ],
+        [
+          "B",
+          0.2338
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "W\\W_0007.jpg",
+      "rotulo": "W",
+      "geo_top3": [
+        [
+          "W",
+          0.1254
+        ],
+        [
+          "V",
+          0.2125
+        ],
+        [
+          "B",
+          0.2377
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "W\\W_0008.jpg",
+      "rotulo": "W",
+      "geo_top3": [
+        [
+          "W",
+          0.1015
+        ],
+        [
+          "V",
+          0.1911
+        ],
+        [
+          "B",
+          0.204
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "W\\W_0009.jpg",
+      "rotulo": "W",
+      "geo_top3": [
+        [
+          "W",
+          0.0978
+        ],
+        [
+          "V",
+          0.1868
+        ],
+        [
+          "B",
+          0.208
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "Y\\Y_0001.jpg",
+      "rotulo": "Y",
+      "geo_top3": [
+        [
+          "Y",
+          0.0771
+        ],
+        [
+          "I",
+          0.2057
+        ],
+        [
+          "A",
+          0.2239
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "Y\\Y_0002.jpg",
+      "rotulo": "Y",
+      "geo_top3": [
+        [
+          "Y",
+          0.0767
+        ],
+        [
+          "I",
+          0.2126
+        ],
+        [
+          "A",
+          0.2236
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "Y\\Y_0003.jpg",
+      "rotulo": "Y",
+      "geo_top3": [
+        [
+          "Y",
+          0.0643
+        ],
+        [
+          "I",
+          0.2186
+        ],
+        [
+          "A",
+          0.2453
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "Y\\Y_0004.jpg",
+      "rotulo": "Y",
+      "geo_top3": [
+        [
+          "Y",
+          0.0939
+        ],
+        [
+          "I",
+          0.2488
+        ],
+        [
+          "A",
+          0.2836
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "Y\\Y_0005.jpg",
+      "rotulo": "Y",
+      "geo_top3": [
+        [
+          "Y",
+          0.0538
+        ],
+        [
+          "I",
+          0.2185
+        ],
+        [
+          "A",
+          0.2622
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "Y\\Y_0006.jpg",
+      "rotulo": "Y",
+      "geo_top3": [
+        [
+          "Y",
+          0.1306
+        ],
+        [
+          "I",
+          0.1932
+        ],
+        [
+          "S",
+          0.24
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "Y\\Y_0007.jpg",
+      "rotulo": "Y",
+      "geo_top3": [
+        [
+          "Y",
+          0.1183
+        ],
+        [
+          "I",
+          0.1847
+        ],
+        [
+          "S",
+          0.2354
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "Y\\Y_0008.jpg",
+      "rotulo": "Y",
+      "geo_top3": [
+        [
+          "Y",
+          0.0543
+        ],
+        [
+          "I",
+          0.193
+        ],
+        [
+          "A",
+          0.2255
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    },
+    {
+      "arquivo": "Y\\Y_0009.jpg",
+      "rotulo": "Y",
+      "geo_top3": [
+        [
+          "Y",
+          0.0557
+        ],
+        [
+          "I",
+          0.2001
+        ],
+        [
+          "A",
+          0.2298
+        ]
+      ],
+      "rede": null,
+      "suspeita": false,
+      "qwen": null,
+      "final": "ok"
+    }
+  ]
+}

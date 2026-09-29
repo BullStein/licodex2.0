@@ -1,0 +1,1 @@
+{"audit": {"running": true, "total": 30, "processed": 0, "counts": {"ok": 0, "revisar": 0, "rejeitar": 0}, "per_label": {}, "current": "", "recent": [], "model": "qwen3-vl:4b", "mode": "vision", "started": 1790627177.7296228, "finished": null}, "updated": 1790627177.7313}

@@ -8,6 +8,13 @@ antes de rodar, senão o import abaixo vai falhar com ModuleNotFoundError.
 Prefira usar translator_nn.py (rede neural) enquanto isso -- ele não
 depende deste arquivo que falta.
 
+NOVO: painel de TREINO / REFORÇO desenhado no vídeo (auditoria do Qwen,
+curva de treino, idade do checkpoint e a FORÇA da letra que você está
+fazendo agora). Precisa de status_overlay.py e libras_status.py na
+mesma pasta; se não existirem, avisa e segue sem o painel. Tecla "p"
+liga/desliga. (Aqui não há --nn-dir, então "idade do checkpoint" só
+aparece no translator_nn.py.)
+
 Lê `data.json` (letras, mão esquerda) e `commands.json` (comandos,
 mão direita), ambos gerados pelo capture_signatures.py (ou pelo
 batch_train_from_images.py), e classifica as duas mãos usando
@@ -49,6 +56,7 @@ Como usar:
 Controles (teclado, além dos gestos da mão direita):
     - "0" ou ESC para sair
     - "9" para limpar o histórico manualmente
+    - "p" para mostrar/esconder o painel de treino/reforço
 """
 
 import os
@@ -224,6 +232,14 @@ def main():
     cv2.namedWindow(WINDOW_NAME, cv2.WINDOW_NORMAL)
     cv2.resizeWindow(WINDOW_NAME, WINDOW_WIDTH, WINDOW_HEIGHT)
 
+    # Painel de treino/reforço (opcional; nunca derruba o tradutor)
+    panel = None
+    try:
+        from status_overlay import StatusOverlay
+        panel = StatusOverlay(os.path.dirname(os.path.abspath(__file__)))
+    except ImportError:
+        print("AVISO: status_overlay.py/libras_status.py não encontrados; painel desligado.")
+
     letter_buffer = deque(maxlen=8)
     command_buffer = deque(maxlen=6)
     frame_timestamp_ms = 0
@@ -320,6 +336,10 @@ def main():
         cv2.putText(frame, history_text, (10, history_box_top + 48),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 255, 255), 2, cv2.LINE_AA)
 
+        # Painel de treino/reforço (auditoria, curva de treino, força da letra atual)
+        if panel is not None:
+            panel.draw(frame, letter, 0.0)
+
         cv2.imshow(WINDOW_NAME, frame)
 
         key = cv2.waitKey(5) & 0xFF
@@ -327,12 +347,16 @@ def main():
             break
         elif key == ord("9"):
             letter_history = ""
+        elif key == ord("p") and panel is not None:
+            panel.toggle()
 
         # --- Limitador de FPS: garante um ritmo estável (não passa de TARGET_FPS) ---
         elapsed = time.time() - loop_start
         if elapsed < MIN_FRAME_INTERVAL:
             time.sleep(MIN_FRAME_INTERVAL - elapsed)
 
+    if panel is not None:
+        panel.close()
     cap.release()
     cv2.destroyAllWindows()
     landmarker.close()
